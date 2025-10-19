@@ -1,0 +1,39 @@
+.main {
+    margin-top: 250px;
+}
+.logo-img {
+    margin-bottom: 30px;
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-input{
+    display: block;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 24px;
+    padding: 10px 30px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+}
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    margin: 30px 4px;
+    width: 150px;
+    background-color: #dfe1e5;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.lang-div{
+    display: flex;
+    justify-content: center;
+}
