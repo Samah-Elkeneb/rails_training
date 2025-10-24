@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <h1>🎉 Happy Birthday, My Champ! 🎂</h1>
+  <img id="moo-img" src="images/moo.png" alt="My son  (Moo) image" />
+  <h2>Are you ready for your surprise?</h2>
+  <button class="btn" onclick="openGift()">Open the surprise 🎁</button>
+
+  <audio id="pop-sound" src="audios/pop-sound.mp3"></audio>
+
+  <script>
+    const popSound = document.getElementById('pop-sound');
+
+    function createBalloon() {
+      const balloon = document.createElement('div');
+      balloon.classList.add('balloon');
+      balloon.style.left = Math.random() * 100 + 'vw';
+      balloon.style.backgroundColor = `hsl(${Math.random() * 360}, 70%, 60%)`;
+      balloon.style.animationDuration = 5 + Math.random() * 3 + 's';
+
+      balloon.addEventListener('click', () => {
+        popSound.currentTime = 0;
+        popSound.play();
+        balloon.classList.add('popped');
+        setTimeout(() => balloon.remove(), 300);
+      });
+
+      document.body.appendChild(balloon);
+    }
+
+    setInterval(createBalloon, 800);
+
+    function openGift() {
+      popSound.play();
+      setTimeout(() => {
+        window.location.href = "gifts.html";
+      }, 1000);
+    }
+  </script>
+
+</body>
+
+</html>
