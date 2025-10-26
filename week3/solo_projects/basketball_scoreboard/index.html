@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h3>TEAM1</h3>
+            <h1 class="number" id="team1-score-el">0</h1>
+            <div class="btns-div">
+                <button class="adding-btn" onclick="add(1, true)">+1</button>
+                <button class="adding-btn" onclick="add(2, true)">+2</button>
+                <button class="adding-btn" onclick="add(3, true)">+3</button>
+            </div>
+        </div>
+        <div>
+            <h3>TEAM2</h3>
+            <h1 class="number" id="team2-score-el">0</h1>
+            <div class="btns-div">
+                <button class="adding-btn" onclick="add(1, false)">+1</button>
+                <button class="adding-btn" onclick="add(2, false)">+2</button>
+                <button class="adding-btn" onclick="add(3, false)">+3</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
