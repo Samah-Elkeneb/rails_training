@@ -1,0 +1,86 @@
+@font-face {
+    font-family: inter;
+    src: url(fonts/Inter.ttf);
+}
+
+body {
+    background-color: #e9f1ea;
+    margin: 0;
+    color: white;
+    font-family: inter;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    margin: auto;
+    background-color: #1F2937;
+    width: 550px;
+    height: 729px;
+    font-size: 40px;
+    border-radius: 20px;
+    border: 5px solid white;
+    padding: 0 0 20px 0;
+}
+.header{
+    display: grid;
+    place-items: center;
+    margin: -10px auto 20px auto;
+    background-color: #6943FF;
+    width: 100%;
+    height: 285px;
+    border-radius:16px 16px 0 0;
+}
+.conversion-data{
+    display: grid;
+    place-items: center;
+    background-color: #273549;
+    margin: 0px 25px;
+    width: 500px;
+    height: 108.57px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 28px;
+    margin-top: 33px;
+}
+
+input {
+    width: 117px;
+    height: 83px;
+    color: white;
+    background-color: #6943FF;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    font-size: 58px;
+    line-height: 24.4px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 6px #B295FF;
+}
+
+button{
+    width: 117px;
+    height: 42px;
+    background-color: white;
+    color: #3D3D3D;
+    border-radius: 5px;
+    border: none;
+    margin: 25px auto;
+}
+h4{
+    font-size: 20px;
+    color: #CCC1FF;
+    /* margin-block-start: 5px; */
+    margin: 10px auto 0 auto;
+}
+p{
+    font-size: 14px;
+    margin: 0px auto;
+}
